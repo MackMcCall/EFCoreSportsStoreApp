@@ -51,7 +51,7 @@ public partial class HplusSportsContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("str_fld_City");
             entity.Property(e => e.StrFldEmail)
-                .HasMaxLength(50)
+                .HasMaxLength(250)
                 .IsUnicode(false)
                 .HasColumnName("str_fld_Email");
             entity.Property(e => e.StrFldFirstName)
