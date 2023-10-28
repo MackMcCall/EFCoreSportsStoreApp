@@ -191,6 +191,7 @@ public partial class HplusSportsContext : DbContext
             entity.Property(e => e.Zipcode)
                 .HasMaxLength(50)
                 .IsUnicode(false);
+            entity.Ignore(e => e.FullName);
         });
 
         OnModelCreatingPartial(modelBuilder);

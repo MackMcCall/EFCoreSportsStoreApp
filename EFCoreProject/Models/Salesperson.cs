@@ -11,6 +11,8 @@ public partial class Salesperson
 
     public string? LastName { get; set; }
 
+    public string? FullName { get { return FirstName + " " + LastName; } }
+
     public string? Email { get; set; }
 
     public string? Phone { get; set; }
